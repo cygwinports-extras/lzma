@@ -1,0 +1,103 @@
+lzma
+------------------------------------------
+LZMA Utils is an attempt to provide LZMA compression to POSIX-like 
+systems. The idea is to have a gzip-like command line tool and a 
+zlib-like library, which would make it easy to adapt the new compression 
+technology to existing applications.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  bash
+  diffutils
+  grep
+  less
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.10-1.10.1-1
+  binutils-20080524-2
+  cygport-0.3.12-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://tukaani.org/lzma/
+
+Canonical download:
+  http://tukaani.org/lzma/
+
+-------------------------------------------
+
+Build instructions:
+  unpack lzma-4.32.7-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./lzma-4.32.7-X.cygport all
+
+This will create:
+  /usr/src/liblzma-devel-4.32.7-X.tar.bz2
+  /usr/src/liblzma0-4.32.7-X.tar.bz2
+  /usr/src/lzma-4.32.7-X-src.tar.bz2
+  /usr/src/lzma-4.32.7-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(lzma)
+  /usr/bin/lzcat
+  /usr/bin/lzcmp
+  /usr/bin/lzdiff
+  /usr/bin/lzegrep
+  /usr/bin/lzfgrep
+  /usr/bin/lzgrep
+  /usr/bin/lzless
+  /usr/bin/lzma.exe
+  /usr/bin/lzmadec.exe
+  /usr/bin/lzmainfo.exe
+  /usr/bin/lzmore
+  /usr/bin/unlzma
+  /usr/share/doc/lzma-4.32.7/AUTHORS
+  /usr/share/doc/lzma-4.32.7/ChangeLog
+  /usr/share/doc/lzma-4.32.7/INSTALL
+  /usr/share/doc/lzma-4.32.7/NEWS
+  /usr/share/doc/lzma-4.32.7/README
+  /usr/share/doc/lzma-4.32.7/THANKS
+  /usr/share/man/man1/lzcat.1.gz
+  /usr/share/man/man1/lzcmp.1.gz
+  /usr/share/man/man1/lzdiff.1.gz
+  /usr/share/man/man1/lzegrep.1.gz
+  /usr/share/man/man1/lzfgrep.1.gz
+  /usr/share/man/man1/lzgrep.1.gz
+  /usr/share/man/man1/lzless.1.gz
+  /usr/share/man/man1/lzma.1.gz
+  /usr/share/man/man1/lzmadec.1.gz
+  /usr/share/man/man1/lzmainfo.1.gz
+  /usr/share/man/man1/lzmore.1.gz
+  /usr/share/man/man1/unlzma.1.gz
+
+(liblzmadec0)
+  /usr/bin/cyglzmadec-0.dll
+
+(liblzmadec-devel)
+  /usr/include/lzmadec.h
+  /usr/lib/liblzmadec.a
+  /usr/lib/liblzmadec.dll.a
+  /usr/lib/liblzmadec.la
+
+------------------
+
+Port Notes:
+
+----- version 4.32.7-1 -----
+Replaces 4.43-2 with a version that is fully compatible with automake,
+and provides liblzmadec (e.g. for yelp).
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

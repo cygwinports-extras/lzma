@@ -1,0 +1,11 @@
+DESCRIPTION="LZMA de/compression library and utilties for *NIX"
+HOMEPAGE="http://tukaani.org/lzma/"
+SRC_URI="http://tukaani.org/lzma/${P}.tar.gz"
+PATCH_URI="4.32-no-undefined.patch"
+
+abi=0
+PKG_NAMES="${PN} liblzmadec0 liblzmadec-devel"
+PKG_HINTS="bin lib devel"
+PKG_CONTENTS[0]="--exclude=*.dll usr/bin/ usr/share/"
+PKG_CONTENTS[1]="usr/bin/*-${abi}.dll"
+PKG_CONTENTS[2]="usr/include/ usr/lib/"

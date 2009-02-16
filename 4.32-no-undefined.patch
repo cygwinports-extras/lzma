@@ -1,0 +1,10 @@
+--- origsrc/lzma-4.32.7/src/liblzmadec/Makefile.am	2005-11-28 10:39:09.000000000 -0600
++++ src/lzma-4.32.7/src/liblzmadec/Makefile.am	2008-08-17 17:45:36.596359500 -0500
+@@ -1,6 +1,6 @@
+ lib_LTLIBRARIES = liblzmadec.la
+ liblzmadec_la_SOURCES = private.h main.c buffer.c io.c
+-liblzmadec_la_LDFLAGS = -version-info 0:0:0
++liblzmadec_la_LDFLAGS = -version-info 0:0:0 -no-undefined
+ 
+ lzmadecincludedir = $(includedir)
+ lzmadecinclude_HEADERS = lzmadec.h

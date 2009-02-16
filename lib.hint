@@ -1,0 +1,8 @@
+category: Archive
+requires: cygwin
+external-source: lzma
+sdesc: "LZMA decompression library (runtime)"
+ldesc: "LZMA Utils is an attempt to provide LZMA compression to 
+POSIX-like systems. The idea is to have a gzip-like command line tool 
+and a zlib-like library, which would make it easy to adapt the new 
+compression technology to existing applications."
