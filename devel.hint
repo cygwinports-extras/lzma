@@ -1,5 +1,5 @@
 category: Archive
-requires: cygwin liblzmadec0
+requires: liblzmadec0
 external-source: lzma
 sdesc: "LZMA decompression library (devel)"
 ldesc: "LZMA Utils is an attempt to provide LZMA compression to 
